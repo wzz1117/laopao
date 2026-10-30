@@ -1,6 +1,19 @@
 <!DOCTYPE html>
 <html>
+<head>
+    <meta charset="UTF-8">
+    <title>图片居中放大</title>
+    <style>
+        .pic {
+            /* 最大宽度，不会无限撑爆页面，按需改 700、800 */
+            max-width: 800px;
+            width: 100%;
+            display: block;  /* 关键：让 margin 居中生效 */
+            margin:  20px auto; /* auto 实现左右居中，20px 是上下外边距 */
+        }
+    </style>
+</head>
 <body>
-测试页面
+    <img class="pic" src="images/tianjiaqi.png" alt="图片">
 </body>
 </html>
